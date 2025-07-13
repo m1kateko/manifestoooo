@@ -296,6 +296,9 @@ html, body {
     color: rgb(230, 147, 5);
 }
 
+.manifesto-images {
+  width: -webkit-fill-available;
+}
 /* Add to styles.css */
 .manifesto-circles {
   display: flex;
