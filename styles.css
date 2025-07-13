@@ -16,8 +16,8 @@ html, body {
     display: grid;
     height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
-    gap: 10px;
-    padding: 10px;
+    gap: 5px;
+    padding: 5px;
     background-color: #ffffff;
 
     grid-template-columns: repeat(10, 1fr);
