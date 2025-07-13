@@ -10,6 +10,14 @@ document.querySelectorAll('.box').forEach(box => {
   });
 });
 
+function setVhUnit() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+window.addEventListener('resize', setVhUnit);
+window.addEventListener('orientationchange', setVhUnit);
+setVhUnit();
+
 // Close modal when clicking the close button
 document.querySelectorAll('.modal .close').forEach(btn => {
   btn.addEventListener('click', function(e) {
@@ -94,4 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
       tooltip.classList.add("hidden");
     });
   });
+
+  
 });
