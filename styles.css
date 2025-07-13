@@ -513,13 +513,23 @@ html, body {
 
 
 /* Make modal-body a flex column so sticky works */
+#modal-box5 .modal-content {
+  padding-bottom: 0.5em; /* or 0 */
+}
+
 #modal-box5 .modal-body {
   display: flex;
   flex-direction: column;
-  height: calc(var(--vh, 1vh) * 70); /* or adjust as needed */
-  min-height: 350px;
-  max-height: calc(var(--vh, 1vh) * 80);
-  overflow: hidden;
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+}
+
+#modal-box5 .manifesto-content-scroll {
+  overflow-y: auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  padding-bottom: 0; /* or as small as you want */
 }
 
 /* Sticky circles bar */
@@ -532,13 +542,6 @@ html, body {
   padding-bottom: 0.5em;
 }
 
-/* Scrollable content area */
-.manifesto-content-scroll {
-  overflow-y: auto;
-  flex: 1 1 0;
-  min-height: 0;
-  padding-bottom: 1em;
-}
 
 /* Optional: keep h2 on top with circles */
 #modal-box5 .modal-body > h2 {
@@ -559,5 +562,3 @@ html, body {
     max-width: 600px;
     margin: auto;
   }
- 
-  
