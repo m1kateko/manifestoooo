@@ -45,7 +45,7 @@ html, body {
     left: 0;
     top: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background: rgba(0,0,0,0.7);
     justify-content: center;
     align-items: center;
@@ -61,9 +61,9 @@ html, body {
     border-radius: 10px;
     padding: 5%;
     width: 90vw;
-    height: 90vh;
+    height: calc(var(--vh, 1vh) * 90);
     max-width: 1200px;
-    max-height: 90vh;
+    max-height: calc(var(--vh, 1vh) * 90);
     box-sizing: border-box;
     overflow: auto;
     position: relative;
@@ -512,9 +512,9 @@ html, body {
 #modal-box5 .modal-body {
   display: flex;
   flex-direction: column;
-  height: 70vh; /* or adjust as needed */
+  height: calc(var(--vh, 1vh) * 70); /* or adjust as needed */
   min-height: 350px;
-  max-height: 80vh;
+  max-height: calc(var(--vh, 1vh) * 80);
   overflow: hidden;
 }
 
