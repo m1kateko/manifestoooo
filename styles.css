@@ -10,6 +10,8 @@ html, body {
     height: 100%;
 }
 
+
+
 .container {
     display: grid;
     height: calc(var(--vh, 1vh) * 100);
@@ -508,6 +510,8 @@ html, body {
     color: #000000;
 }
 
+
+
 /* Make modal-body a flex column so sticky works */
 #modal-box5 .modal-body {
   display: flex;
@@ -556,3 +560,4 @@ html, body {
     margin: auto;
   }
  
+  
